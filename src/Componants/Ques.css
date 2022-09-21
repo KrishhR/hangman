@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&display=swap');
+
+.quesDiv{
+    width: 70%;
+    padding: 0 2vw;
+}
+.quesDiv h1{
+    font-family: 'Dangrek', cursive;
+}
+.inptDiv{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+}
+.inpt{
+    background-color: transparent;
+    outline: none;
+    border-bottom: 3px solid #fff;
+    width: 8%;
+    margin: auto;
+    margin-right: 1vw;
+    height: 12vh;
+    font-size: 3vw;
+    color: white;
+    text-align: center;
+}
+.inpt:focus{
+    background-color: rgba(61, 61, 61, 0.747);
+}

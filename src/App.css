@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background: url(https://media.istockphoto.com/illustrations/studio-room-blurred-background-soft-gradient-pastel-with-lighting-illustration-id1089592832?k=20&m=1089592832&s=612x612&w=0&h=xqJsbCCougTYXK_A-KnFO_mqt4ZrYiTdqxe9zcHFlwg=) no-repeat;
+    background-size: cover;  */
+    background-color: black;
+    color: white;
+}
+.container-div{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+.errorBox{
+    padding: 2vw 6vw;
+}
+.errorBox>p{
+    width: fit-content;
+    font-size: 2.5vw;
+    margin-left: auto;
+    
+}
