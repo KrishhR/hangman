@@ -21,10 +21,8 @@ const App = () => {
     words[Math.floor(Math.random() * words.length)]
   );
 
-  
   let [errors, setErrors] = useState(0);
   let [winner, setWinner] = useState(false);
-  let [char, setChar] = useState("");
 
   return (
     <div>
@@ -36,8 +34,6 @@ const App = () => {
         <Ques
           errors={errors}
           selectedWord={selectedWord}
-          char={char}
-          setChar={setChar}
           setErrors={setErrors}
           winner={winner}
           setWinner={setWinner}

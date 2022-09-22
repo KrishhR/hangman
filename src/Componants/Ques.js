@@ -21,9 +21,6 @@ const Ques = ({ errors, selectedWord, setErrors, winner, setWinner }) => {
       if (errors < 6) {
             setErrors(++errors);
       } 
-      else {
-        ""
-      }
     }
 
     if ((correctWord.length+1) == Array.from(selectedWord).length) {
@@ -31,6 +28,10 @@ const Ques = ({ errors, selectedWord, setErrors, winner, setWinner }) => {
         setWinner(true);
       }
   };
+
+  const playAgain = () => {
+    history.go(0);
+  }
   return (
     <div className="quesDiv">
       {errors < 6 ? (
@@ -40,6 +41,7 @@ const Ques = ({ errors, selectedWord, setErrors, winner, setWinner }) => {
               <h1 style={{ width: "fit-content", margin: "auto" }}>
                 Congratulations! You won! 😃
               </h1>
+              <button className="playAgainBtn" onClick={playAgain}>Play Again</button>
             </div>
           </>
         ) : (
@@ -69,16 +71,11 @@ const Ques = ({ errors, selectedWord, setErrors, winner, setWinner }) => {
             <h1 style={{ width: "fit-content", margin: "auto" }}>
               Unfortunately you lost. 😕
             </h1>
+
+            <button className="playAgainBtn" onClick={playAgain}>Play Again</button>
           </div>
         </>
       )}
-      {/* {(winner==true) ? <>
-            <div>
-              <h1 style={{ width: "fit-content", margin: "auto" }}>
-              Congratulations! You won! 😃
-              </h1>
-            </div>
-          </>:"" } */}
     </div>
   );
 };
